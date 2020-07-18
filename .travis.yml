@@ -1,0 +1,17 @@
+services:
+    - docker
+env:
+  global:
+     - COMMIT=${TRAVIS_COMMIT::6}
+     - REPO=$DOCKER_USER/test-2
+script:
+    - docker build -t run_tests --target tester .
+    - docker build -t $REPO:$COMMIT --build-arg COMMIT_SHA=${TRAVIS_COMMIT} .
+after_success:
+    - docker login -u $DOCKER_USER -p $DOCKER_PASS
+    — export TAG=`if [ “$TRAVIS_BRANCH” == “master” ]; then echo “latest”; else echo $TRAVIS_BRANCH ; fi`
+    — echo $REPO:$TAG:$COMMIT
+    - docker tag $REPO:$COMMIT $REPO:$TAG:$TRAVIS_BUILD_NUMBER
+    - docket push $REPO:$TAG:$TRAVIS_BUILD_NUMBER
+    - docker tag $REPO:$COMMIT $REPO:$TAG:latest
+    - docker push $REPO:$TAG:latest
