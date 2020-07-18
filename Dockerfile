@@ -21,5 +21,5 @@ ARG PORT_ARG=80
 ENV PORT=$PORT_ARG
 EXPOSE $PORT_ARG
 ARG COMMIT_SHA
-RUN echo $COMMIT_SHA > metadata
+RUN printf $COMMIT_SHA > metadata
 ENTRYPOINT [ "npm", "start" ]
