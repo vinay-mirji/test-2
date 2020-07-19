@@ -17,7 +17,7 @@ script:
     - snyk test --docker $REPO:$COMMIT
 after_success:
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
-    - docker tag $REPO:$COMMIT $REPO:$TRAVIS_BUILD_NUMBER
-    - docker push $REPO:$TRAVIS_BUILD_NUMBER
+    - docker tag $REPO:$COMMIT $REPO:$COMMIT
+    - docker push $REPO:$COMMIT
     - docker tag $REPO:$COMMIT $REPO:latest
     - docker push $REPO:latest

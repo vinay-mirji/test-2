@@ -4,3 +4,4 @@ Dockerfile*
 .gitignore
 .git
 README.md
+.DS_Store
