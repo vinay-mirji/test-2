@@ -2,14 +2,14 @@
 [![Build Status](https://travis-ci.com/vinay-mirji/test-2.svg?token=m4spbWRfaq9sJepYZkeo&branch=master)](https://travis-ci.com/vinay-mirji/test-2)
 
  - [Introduction](https://github.com/vinay-mirji/test-2#introduction)
- - [Installation and Execution](##installation-and-execution)
-    - [Pre-requisites](###pre-requisites)
-    - [Build and execute](###build-and-execute)
-        - [Run just the nodejs application without docker](####run-nodejs-application-without-docker)
-        - [Build and run using docker manually](####build-and-run-using-docker-manually)
-        - [CI using travis](####continuous-integration-using-travis-ci-tool)
-    - [Application versioning](###application-versioning)
-    - [Risks associated with application/deployment](###risks)
+ - [Installation and Execution](https://github.com/vinay-mirji/test-2#installation-and-execution)
+    - [Pre-requisites](https://github.com/vinay-mirji/test-2#pre-requisites)
+    - [Build and execute](https://github.com/vinay-mirji/test-2#build-and-execute)
+        - [Run just the nodejs application without docker](https://github.com/vinay-mirji/test-2#run-nodejs-application-without-docker)
+        - [Build and run using docker manually](https://github.com/vinay-mirji/test-2#build-and-run-using-docker-manually)
+        - [CI using travis](https://github.com/vinay-mirji/test-2#continuous-integration-using-travis-ci-tool)
+    - [Application versioning](https://github.com/vinay-mirji/test-2#application-versioning)
+    - [Risks associated with application/deployment](https://github.com/vinay-mirji/test-2#risks)
 
 
 
