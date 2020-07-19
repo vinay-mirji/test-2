@@ -1,7 +1,7 @@
 # ANZ test2
 [![Build Status](https://travis-ci.com/vinay-mirji/test-2.svg?token=m4spbWRfaq9sJepYZkeo&branch=master)](https://travis-ci.com/vinay-mirji/test-2)
 
- - [Introduction](##introduction)
+ - [Introduction](https://github.com/vinay-mirji/test-2#introduction)
  - [Installation and Execution](##installation-and-execution)
     - [Pre-requisites](###pre-requisites)
     - [Build and execute](###build-and-execute)
