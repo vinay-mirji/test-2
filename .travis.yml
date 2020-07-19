@@ -7,7 +7,7 @@ env:
      - COMMIT=${TRAVIS_COMMIT::6}
      - REPO=$DOCKER_USER/test-2
 script:
-    - docker build -t $REPO:$COMMIT --build-arg COMMIT_SHA=$TRAVIS_COMMIT .
+    - docker build -t $REPO:$COMMIT --build-arg COMMIT_SHA=$TRAVIS_COMMIT --build-arg PORT_ARG=$PORT_ARG .
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
     - docker tag $REPO:$COMMIT $REPO:$TRAVIS_BUILD_NUMBER
     - docker push $REPO:$TRAVIS_BUILD_NUMBER
