@@ -174,6 +174,7 @@ To acheive this replace `$COMMIT` in the file with `$TRAVIS_BUILD_NUMBER`
 
 
 ### Risks
+
 1. The application is not secure and once deployed anybody can access the api `/version`. This puts the application at risk for DDoS style of attacks.
 
 2. The CI pipeline warns about the unencrypted password being stored in the home directory. To overcome this we need to use encrypted keys for `DOCKER_PASSWORD` and `DOCKER_USER`
